@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:padding="16dp">
 
-    <!-- Ejemplo de una pregunta con opciones -->
+    <!-- Pregunta 1 -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -20,11 +20,56 @@
         <RadioButton android:id="@+id/preguntaOneThree" android:text="5" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
     </RadioGroup>
 
-    <!-- Repite el mismo formato para las preguntas restantes -->
+    <!-- Pregunta 2 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pregunta 2: 5 - 3 = ?"/>
 
+    <RadioGroup
+        android:id="@+id/preguntaTwoRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton android:id="@+id/preguntaTwoOne" android:text="1" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <RadioButton android:id="@+id/preguntaTwoTwo" android:text="2" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <RadioButton android:id="@+id/preguntaTwoThree" android:text="3" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </RadioGroup>
+
+    <!-- Pregunta 3 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pregunta 3: 3 * 3 = ?"/>
+
+    <RadioGroup
+        android:id="@+id/preguntaThreeRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton android:id="@+id/preguntaThreeOne" android:text="6" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <RadioButton android:id="@+id/preguntaThreeTwo" android:text="9" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <RadioButton android:id="@+id/preguntaThreeThree" android:text="12" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </RadioGroup>
+
+    <!-- Pregunta 4 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pregunta 4: 8 / 4 = ?"/>
+
+    <RadioGroup
+        android:id="@+id/preguntaFourRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton android:id="@+id/preguntaFourOne" android:text="1" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <RadioButton android:id="@+id/preguntaFourTwo" android:text="2" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <RadioButton android:id="@+id/preguntaFourThree" android:text="4" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </RadioGroup>
+
+    <!-- Botón para calificar -->
     <Button
         android:id="@+id/calificarBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Calificar"/>
+        android:text="Calificar"
+        android:layout_marginTop="16dp"/>
 </LinearLayout>
