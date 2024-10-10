@@ -5,26 +5,71 @@
     android:layout_height="match_parent"
     android:padding="16dp">
 
-    <!-- Ejemplo de una pregunta con opciones -->
+    <!-- Pregunta 1 -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Pregunta 1: 2 + 2 = ?"/>
+        android:text="Pregunta 1: ¿Cuál es el verbo en la siguiente oración: 'El perro corre rápido'?" />
 
     <RadioGroup
-        android:id="@+id/preguntaOneRadioGroup"
+        android:id="@+id/preguntaOneEspRadioGroup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <RadioButton android:id="@+id/preguntaOneOne" android:text="3" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
-        <RadioButton android:id="@+id/preguntaOneTwo" android:text="4" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
-        <RadioButton android:id="@+id/preguntaOneThree" android:text="5" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <RadioButton android:id="@+id/preguntaOneEspOption1" android:text="El" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <RadioButton android:id="@+id/preguntaOneEspOption2" android:text="corre" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <RadioButton android:id="@+id/preguntaOneEspOption3" android:text="rápido" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
     </RadioGroup>
 
-    <!-- Repite el mismo formato para las preguntas restantes -->
+    <!-- Pregunta 2 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pregunta 2: ¿Cuál es un sinónimo de 'feliz'?" />
 
+    <RadioGroup
+        android:id="@+id/preguntaTwoEspRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton android:id="@+id/preguntaTwoEspOption1" android:text="Triste" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <RadioButton android:id="@+id/preguntaTwoEspOption2" android:text="Contento" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <RadioButton android:id="@+id/preguntaTwoEspOption3" android:text="Enojado" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </RadioGroup>
+
+    <!-- Pregunta 3 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pregunta 3: Selecciona la palabra que es un adjetivo: 'El coche rojo es rápido'" />
+
+    <RadioGroup
+        android:id="@+id/preguntaThreeEspRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton android:id="@+id/preguntaThreeEspOption1" android:text="coche" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <RadioButton android:id="@+id/preguntaThreeEspOption2" android:text="rojo" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <RadioButton android:id="@+id/preguntaThreeEspOption3" android:text="rápido" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </RadioGroup>
+
+    <!-- Pregunta 4 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pregunta 4: ¿Qué tipo de palabra es 'hablar'?" />
+
+    <RadioGroup
+        android:id="@+id/preguntaFourEspRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton android:id="@+id/preguntaFourEspOption1" android:text="Verbo" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <RadioButton android:id="@+id/preguntaFourEspOption2" android:text="Sustantivo" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <RadioButton android:id="@+id/preguntaFourEspOption3" android:text="Adjetivo" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </RadioGroup>
+
+    <!-- Botón para calificar -->
     <Button
-        android:id="@+id/calificarBtn"
+        android:id="@+id/calificarEspBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Calificar"/>
 </LinearLayout>
+

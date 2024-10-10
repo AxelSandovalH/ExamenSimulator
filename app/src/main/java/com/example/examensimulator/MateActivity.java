@@ -36,6 +36,9 @@ public class MateActivity extends AppCompatActivity {
                 int p3Answer = p3RadioGroup.getCheckedRadioButtonId() == R.id.preguntaThreeTwo ? 1 : 0; // Respuesta correcta es 2 (9)
                 int p4Answer = p4RadioGroup.getCheckedRadioButtonId() == R.id.preguntaFourTwo ? 1 : 0; // Respuesta correcta es 2 (2)
 
+                // Extraer el nombre del Intent
+                String nombreUsuario = getIntent().getStringExtra("name");
+
                 // Crea un intent para pasar las respuestas a la actividad de calificación
                 Intent intent = new Intent(MateActivity.this, CalificarActivity.class);
                 intent.putExtra("exam", 1); // Identifica que es el examen de matemáticas
@@ -43,9 +46,11 @@ public class MateActivity extends AppCompatActivity {
                 intent.putExtra("p2", p2Answer);
                 intent.putExtra("p3", p3Answer);
                 intent.putExtra("p4", p4Answer);
+                intent.putExtra("name", nombreUsuario); // Pasa el nombre también
 
                 startActivity(intent); // Inicia la actividad de calificación
             }
+
         });
     }
 }
